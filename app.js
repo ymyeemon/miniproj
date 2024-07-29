@@ -23,10 +23,10 @@ const connection = mysql.createConnection({
     //password: '',
     //database: 'journals'
 
-    host: 'sql.freedb.tech',
-    user: 'freedb_YeeMon',
-    password: '*r5#?v6Jp2jVHA7',
-    database: 'freedb_journals'
+    host: 'pro.freedb.tech',
+    user: 'teamfour',
+    password: '*wauWdA985W3rA?',
+    database: 'teamfourdb'
 
 });
 
