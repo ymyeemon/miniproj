@@ -18,10 +18,16 @@ const upload = multer({ storage: storage }); // setting up multer with the stora
 
 // Create MySQL connection
 const connection = mysql.createConnection({
-host: 'localhost',
-user: 'root',
-password: '',
-database: 'journals'
+    //host: 'localhost',
+    //user: 'root',
+    //password: '',
+    //database: 'journals'
+
+    host: 'sql.freedb.tech',
+    user: 'freedb_YeeMon',
+    password: '*r5#?v6Jp2jVHA7',
+    database: 'freedb_journals'
+
 });
 
 connection.connect((err) => {
