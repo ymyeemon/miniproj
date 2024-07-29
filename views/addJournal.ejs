@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Yee Mon's Travel Journals</title>
+</head>
+
+<body>
+
+    <%- include ('partials/navbar.ejs') %>
+
+    <div class="container-fluid bg-light text-dark">
+
+        <div class="container py-5 col-sm-10 col-xl-10">
+            
+            <div class="row gx-5 align-items-center">
+                <div class="col-6">
+                    <img src="https://images.unsplash.com/photo-1506869640319-fe1a24fd76dc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img rounded-5" alt="HeaderImage">
+                </div>
+
+                <div class="col-6">
+                    <h2 style="font-weight: 700;">Embrace the Journey</h2>
+                    <p class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Travelling is not just about visiting new places! It's about immersing yourself in different cultures, tasting exotic flavors, and creating memories that last a lifetime.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container-fluid p-5 text-dark" style="background-color: #F3EFDE;">
+
+        <div class="text-center mb-2">
+            <h2 style="font-weight: 700;">Add a new travel journal</h2>
+        </div>
+
+        <div class="px-5 text-center">
+
+            <form action="/addJournal" method="POST" enctype="multipart/form-data" class="px-5">
+
+                <div class="mb-3 mt-3 px-5">
+                    <label for="location" class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Location:</label><br>
+                    <input type="text" id="location" placeholder="Enter the location" name="location" style="width: 50%" required>
+                </div>
+
+                <br>
+
+                <div class="mb-3 mt-3 px-5">
+                    <label for="period" class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Travel Period:</label><br>
+                    <input type="text" id="period" placeholder="Enter your travel period" name="period" style="width: 50%" required>
+                </div>
+
+                <br>
+
+                <div class="mb-3 mt-3 px-5">
+                    <label for="title" class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Title:</label><br>
+                    <input type="text" id="title" placeholder="Enter the title for your journal" name="title" style="width: 50%" required>
+                </div>
+
+                <br>
+
+                <div class="mb-3 mt-3 px-5">
+                    <label for="text" class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Text:</label><br>
+                    <textarea id="text" placeholder="Enter your journal text" name="text" style="width: 50%" rows="10" required></textarea>
+                </div>
+
+                <br>
+
+                <div class="mb-3 mt-3 px-5">
+                    <label for="date" class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Date:</label><br>
+                    <input type="date" id="date" name="date" style="width: 50%" required>
+                </div>
+
+                <br>
+
+                <div class="mb-3 mt-3 px-5">
+                    <label for="image" class="text-muted" style="font-family: Arial, Helvetica, sans-serif; font-size: large;">Image:</label><br>
+                    <input type="file" id="image" placeholder="Enter the image URL" name="image" accept="image/*" required> <!-- accept any image format types -->
+                </div>
+
+                <br>
+
+                <div class="mb-3 mt-4 px-5">
+                    <button type="submit" class="btn btn-outline-dark" onclick="return confirm('Are you sure you want to submit this journal?')">Submit</button>
+                </div>
+            </form>
+
+            <div>
+                <a href="/" class="btn btn-outline-dark">Back</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <%- include ('partials/footer.ejs') %>
+
+
+</body>
+</html>
