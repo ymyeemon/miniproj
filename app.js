@@ -28,11 +28,11 @@ const connection = mysql.createConnection({
     // password: 'belovedYMT_66_',
     // database: 'journalsminiproj'
 
-    host: 'bzbygockieasbgten2jn-mysql.services.clever-cloud.com',
-    user: 'uivzxnkebo1rclh3',
-    password: 'HcODugyek5FtijC7NsvR',
-    database: 'bzbygockieasbgten2jn',
-    port: 3306
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
 
 });
 
