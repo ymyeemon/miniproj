@@ -23,10 +23,16 @@ const connection = mysql.createConnection({
     // password: '',
     // database: 'journals'
 
-    host: 'db4free.net',
-    user: 'journalsminiproj',
-    password: 'belovedYMT_66_',
-    database: 'journalsminiproj'
+    // host: 'db4free.net',
+    // user: 'journalsminiproj',
+    // password: 'belovedYMT_66_',
+    // database: 'journalsminiproj'
+
+    host: 'bzbygockieasbgten2jn-mysql.services.clever-cloud.com',
+    user: 'uivzxnkebo1rclh3',
+    password: 'HcODugyek5FtijC7NsvR',
+    database: 'bzbygockieasbgten2jn',
+    port: 3306
 
 });
 
