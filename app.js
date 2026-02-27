@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');  
 const multer = require('multer');   
 const mysql = require('mysql2');     
@@ -28,11 +30,11 @@ const connection = mysql.createConnection({
     // password: 'belovedYMT_66_',
     // database: 'journalsminiproj'
 
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    port: process.env.DB_PORT
+    host: process.env.MYSQL_ADDON_HOST,
+    user: process.env.MYSQL_ADDON_USER,
+    password: process.env.MYSQL_ADDON_PASSWORD,
+    database: process.env.MYSQL_ADDON_DB,
+    port: process.env.MYSQL_ADDON_PORT
 
 });
 
