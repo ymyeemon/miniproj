@@ -30,11 +30,17 @@ const connection = mysql.createConnection({
     // password: 'belovedYMT_66_',
     // database: 'journalsminiproj'
 
-    host: process.env.MYSQL_ADDON_HOST,
-    user: process.env.MYSQL_ADDON_USER,
-    password: process.env.MYSQL_ADDON_PASSWORD,
-    database: process.env.MYSQL_ADDON_DB,
-    port: process.env.MYSQL_ADDON_PORT
+    // host: process.env.MYSQL_ADDON_HOST,
+    // user: process.env.MYSQL_ADDON_USER,
+    // password: process.env.MYSQL_ADDON_PASSWORD,
+    // database: process.env.MYSQL_ADDON_DB,
+    // port: process.env.MYSQL_ADDON_PORT
+
+    host: 'bzbygockieasbgten2jn-mysql.services.clever-cloud.com',
+    user: 'uivzxnkebo1rclh3',
+    password: 'uYccmcEInzQoJSlL8vOa',
+    database: 'bzbygockieasbgten2jn',
+    port: 3306
 
 });
 
